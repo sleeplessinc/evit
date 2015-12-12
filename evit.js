@@ -27,25 +27,11 @@ var Evit = function() {
 
 
 if((typeof process) !== 'undefined') {
+	// test
 
 	// we're in node.js (versus browser)
 
-	util = require("util");
-	EventEmitter = require("events");
-
-	EE = function(ctr) {
-		util.inherits(ctr, EventEmitter);
-		var o = new ctr();
-		EventEmitter.call(o);
-		return o;
-	};
-
-	
-	var legacy_func = function() { return new Evit(); }
-	legacy_func.Evit = Evit;
-	legacy_func.EE = EE;
-
-	module.exports = legacy_func;
+	module.exports = Evit;
 
 	if(require && require.main === module) {
 		// this module is being executed directly

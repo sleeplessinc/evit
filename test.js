@@ -1,5 +1,5 @@
 
-Evit = require("./evit.js").Evit;
+Evit = require("./evit.js");
 
 Thing = function() {
 	this.name = "Mr. Thing";
@@ -14,15 +14,5 @@ t.on("foo", function() {
 t.emit("foo");			// prints "foo happens"
 t.emit("bar");			// 
 
-// ---------------
-
-
-EE = require("./evit.js").EE;
-t = new EE(Thing);
-t.on("bar", function(name) {
-	console.log(name+" says, bar happens");
-});
-t.emit("bar", t.name);	
-t.emit("foo");			// prints "foo happens"
 
 
