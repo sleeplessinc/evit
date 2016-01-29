@@ -1,6 +1,6 @@
 {
 	"name": "evit",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description" : "Minimalist event emitter.  Works in browser or Node",
 	"author": "Joe Hitchens <joe@sleepless.com> (sleepless.com)",
 	"license": {
